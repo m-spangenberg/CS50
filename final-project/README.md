@@ -1,0 +1,1 @@
+My final project for **CS50 - Harvard University's introduction to the intellectual enterprises of computer science and the art of programming** exists in its own repository, and can be found at [HydroStatus](https://github.com/m-spangenberg/HydroStatus).

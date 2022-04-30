@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Order</th>
+            <th>Timestamp</th>
+        </tr>
+        {% for history in histories %}
+        <tr>
+            <td>{{ history.symbol }}</td>
+            <td>{%if history.type == "SELL"%}
+                    - {{ history.shares }}
+                {% else %}
+                    {{ history.shares }}
+                {% endif %}</td>
+            <td>{{ history.price | usd }}</td>
+            <td>{{ history.type }}</td>
+            <td>{{ history.datetime }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+{% endblock %}

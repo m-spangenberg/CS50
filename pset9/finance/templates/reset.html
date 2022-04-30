@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Password Reset
+{% endblock %}
+
+{% block main %}
+    <form action="/reset" method="post">
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="password" name="newpassword" placeholder="New Password" type="password">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="password" name="confirmation" placeholder="New Password Confirmation" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Reset</button>
+    </form>
+
+    <br>
+    <br>
+    <p>{{ resetconfirmation }}</p>
+{% endblock %}

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Scripts and Styling -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#4285f4">
+        <meta name="author" content="Marthinus Spangenberg">
+        <!-- Men live as long as we speak their names -->
+        <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A Week 8 Harvard CS50 Problem Set, Homepage">
+        <!-- Page Title -->
+        <title>CS50: Week 8 - Homepage</title>
+    </head>
+
+    <body>
+    <!-- Navigaton Bar -->
+        <header>
+            <nav class="navbar fixed-top shadow-lg navbar-expand-lg navbar-dark bg-dark">
+                <p class="navbar-brand font-weight-bold">&#129497; &nbsp; <strong>Terry Pratchett's Discworld</strong> &nbsp; <em>//</em> &nbsp; <em>A guide for mortals!</em></p>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="characters.html">Characters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="locations.html">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Snarky Landing Introduction-->
+        <div id="introduction">
+            <p class="lh-sm">Below you will find a list of books in chronological order explaining the <small>*</small>Great A'Tuin and all the <small>**</small>wonderful beings that reside on her, err, its(?) back. Be sure to see our handy-dandy compendium of characters and locations so you don't get lost. <small>***</small>We can't have that. Well... what are you waiting for? We've got things to do. You can't expect letters to hang around all day, der's words that need makin'!</p>
+            <br>
+                <div class="small lh-1">
+                    <p><small>* A sea turtle, with five elephants on its back, carrying the disc of the world through the interstellar medium.
+                    <br>** Also possibly not-so-wonderful beings, gods, non-corporeal entities, the odd tax collector and DEATH.
+                    <br>*** We really can't, body doubles at the Undertaker's Guild cost a fortune!</small></p>
+                </div>
+                <br>
+            <button type="button" class="btn btn-warning" onclick="dismiss()">Dismiss Greeting</button>
+        </div>
+
+        <!-- Book Table, Chronological Order -->
+        <main>
+        <br>
+        <div class="table-responsive">
+        <table class="table table-dark table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Pages</th>
+                    <th scope="col">Published</th>
+                    <th scope="col">ISBN</th>
+                    <th scope="col">Buy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">The Colour of Magic</th>
+                    <td>288</td>
+                    <td>1983</td>
+                    <td>ISBN: 9780552166591</td>
+                    <td><a href="https://www.amazon.co.uk/Colour-Magic-Discworld-Novel-Novels/dp/0552166596">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">The Light Fanatastic</th>
+                    <td>288</td>
+                    <td>1986</td>
+                    <td>ISBN: 9780552166607</td>
+                    <td><a href="https://www.amazon.co.uk/The-Light-Fantastic-Discworld-2/dp/B002SQ451E">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Equal Rites</th>
+                    <td>288</td>
+                    <td>1987</td>
+                    <td>ISBN: 9780552166614</td>
+                    <td><a href="https://www.amazon.co.uk/Equal-Rites-Discworld-Book-3/dp/B002SPZW2Q">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Mort</th>
+                    <td>320</td>
+                    <td>1987</td>
+                    <td>ISBN: 9780552166621</td>
+                    <td><a href="https://www.amazon.co.uk/Mort-Discworld-Book-4/dp/B002SQ5V8A">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Sourcery</th>
+                    <td>336</td>
+                    <td>1988</td>
+                    <td>ISBN: 9780552166638</td>
+                    <td><a href="https://www.amazon.co.uk/Sourcery-Discworld-Book-5/dp/B002SQ74QC">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Wyrd Sisters</th>
+                    <td>364</td>
+                    <td>1988</td>
+                    <td>ISBN: 9780552166645</td>
+                    <td><a href="https://www.amazon.co.uk/Wyrd-Sisters-Discworld-Book-6/dp/B002SQ5ULS">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Pyramids</th>
+                    <td>384</td>
+                    <td>1989</td>
+                    <td>ISBN: 9780552166652</td>
+                    <td><a href="https://www.amazon.co.uk/Pyramids-Discworld-Novel-7-ebook/dp/B00351YF0M">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Gaurds! Gaurds!</th>
+                    <td>432</td>
+                    <td>1989</td>
+                    <td>ISBN: 9780552166669</td>
+                    <td><a href="https://www.amazon.co.uk/Guards-Discworld-Novel-Novels/dp/0552166669">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Eric</th>
+                    <td>160</td>
+                    <td>1990</td>
+                    <td>ISBN: 9781857989540</td>
+                    <td><a href="https://www.amazon.co.uk/Eric-Discworld-Unseen-University-Collection-ebook/dp/B00AES08FA">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Moving Pictures</th>
+                    <td>400</td>
+                    <td>1990</td>
+                    <td>ISBN: 9780552166676</td>
+                    <td><a href="https://www.amazon.co.uk/Moving-Pictures-Discworld-Book-10/dp/B002SQ1Y7W">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Reaper Man</th>
+                    <td>352</td>
+                    <td>1991</td>
+                    <td>ISBN: 9780552166683</td>
+                    <td><a href="https://www.amazon.co.uk/Reaper-Man-Discworld-Book-11/dp/B002SQ8V4Q">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Witches Abroad</th>
+                    <td>368</td>
+                    <td>1991</td>
+                    <td>ISBN: 9780552167505</td>
+                    <td><a href="https://www.amazon.co.uk/Witches-Abroad-Discworld-Book-12/dp/B002SQ8VGY">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Small Gods</th>
+                    <td>400</td>
+                    <td>1992</td>
+                    <td>ISBN: 9780552167512</td>
+                    <td><a href="https://www.amazon.co.uk/Small-Gods-Discworld-Book-13/dp/B002SQF9DM">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Lords and Ladies</th>
+                    <td>400</td>
+                    <td>1992</td>
+                    <td>ISBN: 9780552167529</td>
+                    <td><a href="https://www.amazon.co.uk/Lords-Ladies-Discworld-Novel-14-ebook/dp/B00354YA2C">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Men at Arms</th>
+                    <td>432</td>
+                    <td>1993</td>
+                    <td>ISBN: 9780552167536</td>
+                    <td><a href="https://www.amazon.co.uk/Men-Arms-Discworld-Book-15/dp/B002SQBAY4">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Soul Music</th>
+                    <td>432</td>
+                    <td>1994</td>
+                    <td>ISBN: 9780552167550</td>
+                    <td><a href="https://www.amazon.co.uk/Soul-Music-Discworld-Book-16/dp/B002SQAWCK">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Interesting Times</th>
+                    <td>432</td>
+                    <td>1994</td>
+                    <td>ISBN: 9780552167543</td>
+                    <td><a href="https://www.amazon.co.uk/Interesting-Times-Discworld-Book-17/dp/B002SQ8URY">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Maskerade</th>
+                    <td>384</td>
+                    <td>1995</td>
+                    <td>ISBN: 9780552167567</td>
+                    <td><a href="https://www.amazon.co.uk/Maskerade-Discworld-Book-18/dp/B002SQ3NTY">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Feet of Clay</th>
+                    <td>416</td>
+                    <td>1996</td>
+                    <td>ISBN: 9780552167574</td>
+                    <td><a href="https://www.amazon.co.uk/Feet-Clay-Discworld-Book-19/dp/B002SQ7584">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Hogfather</th>
+                    <td>432</td>
+                    <td>1996</td>
+                    <td>ISBN: 9780552167581</td>
+                    <td><a href="https://www.amazon.co.uk/Audible-Hogfather-Discworld-Book-20/dp/B09LVPVFT1">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Jingo</th>
+                    <td>464</td>
+                    <td>1997</td>
+                    <td>ISBN: 9780552167598</td>
+                    <td><a href="https://www.amazon.co.uk/Jingo-Discworld-Book-21/dp/B002SQ9BL8">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">The Last Continent</th>
+                    <td>416</td>
+                    <td>1998</td>
+                    <td>ISBN: 9780552167604</td>
+                    <td><a href="https://www.amazon.co.uk/Last-Continent-Discworld-Book-22/dp/B002SQ9BMW">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Carpe Jugulum</th>
+                    <td>416</td>
+                    <td>1998</td>
+                    <td>ISBN: 9780552167611</td>
+                    <td><a href="https://www.amazon.co.uk/Carpe-Jugulum-Discworld-Book-23/dp/B002SQFATA">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">The Fifth Elephant</th>
+                    <td>464</td>
+                    <td>1999</td>
+                    <td>ISBN: 9780552167628</td>
+                    <td><a href="https://www.amazon.co.uk/Fifth-Elephant-Discworld-Book-24/dp/B002SQD5XI">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">The Truth</th>
+                    <td>448</td>
+                    <td>2000</td>
+                    <td>ISBN: 9780552167635</td>
+                    <td><a href="https://www.amazon.co.uk/Truth-Discworld-Novel-25-ebook/dp/B00354YA3G">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Thief of Time</th>
+                    <td>432</td>
+                    <td>2001</td>
+                    <td>ISBN: 9780552167642</td>
+                    <td><a href="https://www.amazon.co.uk/Thief-Time-Discworld-Book-26/dp/B002SQBB5C">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">The Last Hero</th>
+                    <td>176</td>
+                    <td>2001</td>
+                    <td>ISBN: 9780575081963</td>
+                    <td><a href="https://www.amazon.co.uk/Last-Hero-Terry-Pratchett-ebook/dp/B00WERXEVE">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">The Amazing Maurice and His Educated Rodents</th>
+                    <td>76</td>
+                    <td>2001</td>
+                    <td>ISBN: 9781408145630</td>
+                    <td><a href="https://www.amazon.co.uk/Collins-Musicals-Pratchetts-Amazing-Educated/dp/1408145634">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Night Watch</th>
+                    <td>480</td>
+                    <td>2002</td>
+                    <td>ISBN: 9780552167666</td>
+                    <td><a href="https://www.amazon.co.uk/Night-Watch-Discworld-Book-29/dp/B003ZTSKAU">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">The Wee Free Men</th>
+                    <td>320</td>
+                    <td>2003</td>
+                    <td>ISBN: 9780552549059</td>
+                    <td><a href="https://www.amazon.co.uk/The-Wee-Free-Men/dp/B003X3N8U0">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Monsterous Regiment</th>
+                    <td>480</td>
+                    <td>2003</td>
+                    <td>ISBN: 9780552167673</td>
+                    <td><a href="https://www.amazon.co.uk/Monstrous-Regiment-Discworld-Novel-Novels/dp/0552167673">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">A Hat Full of Sky</th>
+                    <td>352</td>
+                    <td>2004</td>
+                    <td>ISBN: 9780552551441</td>
+                    <td><a href="https://www.amazon.co.uk/Hat-Full-Sky-Discworld-Childrens/dp/B002SPXCDC">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Going Postal</th>
+                    <td>496</td>
+                    <td>2004</td>
+                    <td>ISBN: 9780552167680</td>
+                    <td><a href="https://www.amazon.co.uk/Going-Postal-Discworld-Book-33/dp/B002SQDEB6">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Thud!</th>
+                    <td>464</td>
+                    <td>2005</td>
+                    <td>ISBN: 9780552167697</td>
+                    <td><a href="https://www.amazon.co.uk/Thud-Discworld-Book-34/dp/B002SQ7VVA">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Wintersmith</th>
+                    <td>352</td>
+                    <td>2006</td>
+                    <td>ISBN: 9780552553698</td>
+                    <td><a href="https://www.amazon.co.uk/Wintersmith-Discworld-Book-35-Childrens/dp/B002SQD37Q">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Making Money</th>
+                    <td>480</td>
+                    <td>2007</td>
+                    <td>ISBN: 9780552167703</td>
+                    <td><a href="https://www.amazon.co.uk/Making-Money-Discworld-Novel-Novels/dp/0552167703">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Unseen Academicals</th>
+                    <td>544</td>
+                    <td>2009</td>
+                    <td>ISBN: 9780552167710</td>
+                    <td><a href="https://www.amazon.co.uk/Unseen-Academicals-Discworld-Book-37/dp/B0030IZ3EM">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">I Shall Wear Midnight</th>
+                    <td>432</td>
+                    <td>2010</td>
+                    <td>ISBN: 9780552166058</td>
+                    <td><a href="https://www.amazon.co.uk/Shall-Wear-Midnight-Discworld-Novel-ebook/dp/B003T0G9XU">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Snuff</th>
+                    <td>512</td>
+                    <td>2011</td>
+                    <td>ISBN: 9780552166751</td>
+                    <td><a href="https://www.amazon.co.uk/Snuff-Discworld-Book-39/dp/B005VSU8XA">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Raising Steam</th>
+                    <td>374</td>
+                    <td>2013</td>
+                    <td>ISBN: 9780552170468</td>
+                    <td><a href="https://www.amazon.co.uk/Raising-Steam/dp/B00GBQY03K">Amazon</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">The Shepherd's Crown</th>
+                    <td>336</td>
+                    <td>2015</td>
+                    <td>ISBN: 9780552574471</td>
+                    <td><a href="https://www.amazon.co.uk/The-Shepherds-Crown/dp/B00XINX46I">Amazon</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer footer-expand-lg footer-dark bg-dark fixed-bottom">
+            <div class="col-md-4 d-flex align-items-center">
+            <p class="text-white"><small>Harvard CS50 <a class="text-muted" href="https://cs50.harvard.edu/x/2022/psets/8/homepage/">Homepage</a><br>
+            by <a class="text-muted" href="https://github.com/m-spangenberg">@m-spangenberg</a></small></p>
+            </div>
+        </footer>
+
+    </body>
+</html>

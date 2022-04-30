@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Landing
+{% endblock %}
+
+{% block main %}
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        {% for portfolio in portfolios %}
+        <tr>
+            <td>{{ portfolio.symbol }}</td>
+            <td>{{ portfolio.entity }}</td>
+            <td>{{ (portfolio.total_shares) | round | int }}</td>
+            <td>{{ portfolio.price | usd}}</td>
+            <td >{{ (portfolio.price * portfolio.total_shares | round | int) | usd }}</td>
+        </tr>
+        {% endfor %}
+        <tfoot>
+            <tr>
+                <th id="cash" colspan="4">Cash </th>
+                <td>{{ funds | usd}}</td>
+            </tr>
+            <tr>
+                <th id="total" colspan="4">TOTAL </th>
+                <td>
+                    {{ sharetotals | usd }}
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}

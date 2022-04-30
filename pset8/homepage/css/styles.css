@@ -1,0 +1,62 @@
+/* HTML Style */
+html {
+  height: 100%;
+  background-color: #212529;
+  color: lightgrey;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* Body Style */
+body {
+  min-height: 100%;
+  background-color: #212529;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: lightgrey;
+}
+
+#introduction {
+  padding-top: 84px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: lightgrey;
+
+}
+
+/* Navigation Bar Style */
+.navbar {
+    width: 100%;
+    overflow: auto;
+    padding-left:24px;
+    padding-right:24px;
+    padding-top:8px;
+    padding-bottom:8px;
+  }
+
+/* Footer Style */
+.footer {
+  width: 100%;
+  overflow: auto;
+  padding-left:24px;
+  padding-right:24px;
+  padding-top:16px;
+  padding-bottom:8px;
+}
+
+/* unvisited link */
+a:link {
+  color: grey;
+}
+
+/* visited link */
+a:visited {
+  color: #ff9900;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}

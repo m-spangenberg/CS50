@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Processed sorted.txt the fastest of all the algorithms but took twice as long to do reversed.txt, proving Big-Omega of n but Big-O of n-squared.
+
+sort2 uses: Merge Sort
+
+How do you know?: Was the fastest to process random.txt, but processed reversed.txt and sorted.txt in the same time proving Big-Omega n log-n and Big-O of n log-n.
+
+sort3 uses: Selection Sort
+
+How do you know?: Was quicker to process reversed.txt than sorted.txt

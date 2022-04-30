@@ -1,0 +1,16 @@
+ .small
+{
+    font-size: large;
+}
+.medium
+{
+    font-size: medium;
+}
+.small
+{
+    font-size: small;
+}
+.centered
+{
+    text-align: center;
+}
